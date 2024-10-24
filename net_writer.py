@@ -90,6 +90,7 @@ def get_all_static_data(component):
         component_data = getattr(loaded_network, loaded_network.components[component]['list_name'])
         if isinstance(component_data, pd.DataFrame):
             # Replace NaN and Infinity values with None
+            component_data = component_data.reset_index()
             sanitized_data = component_data.replace([np.inf, -np.inf, np.nan], None).to_dict(orient='list')
             return jsonify(sanitized_data)
     return jsonify({"status": "error", "message": "No static data available."})
