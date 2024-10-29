@@ -1,0 +1,24 @@
+name,bus,p_nom,p_nom_extendable,p_nom_min,p_min_pu,p_max_pu,carrier,marginal_cost,build_year,min_up_time,min_down_time,up_time_before,down_time_before,ramp_limit_up,ramp_limit_down,p_nom_opt
+Gen-Load Shed,B_Ethiopia,1.0,True,0.0,0.0,1.0,AC,2000.0,0,0,0,1,0,1.0,1.0,3046.0350483700495
+Gen-Gas New,B_Ethiopia,100.0,False,0.0,0.0,1.0,AC,1000.0,0,0,0,1,0,1.0,1.0,100.0
+Gen-Adama,B_Ethiopia,204.0,False,0.0,0.0,1.0,AC,120.0,0,0,0,1,0,1.0,1.0,204.0
+Gen-Ashegoda,B_Ethiopia,120.0,False,0.0,0.0,1.0,AC,60.0,0,0,0,1,0,1.0,1.0,120.0
+Gen-Ayisha,B_Ethiopia,80.0,False,0.0,0.0,1.0,AC,80.0,0,0,0,1,0,1.0,1.0,80.0
+Gen-Wind New,B_Ethiopia,1.0,False,0.0,0.0,1.0,AC,0.0,0,0,0,1,0,1.0,1.0,1.0
+Gen-Solar New I,B_Ethiopia,1.0,False,0.0,0.0,1.0,AC,0.0,0,0,0,1,0,1.0,1.0,1.0
+Gen-Solar New II,B_Ethiopia,1.0,False,0.0,0.0,1.0,AC,0.0,0,0,0,1,0,1.0,1.0,1.0
+RvrIn-Lake Tana Inflow,B_Lake Tana,1.0,True,0.0,0.0,1.0,water,0.0,0,0,0,1,0,1.0,1.0,6.396
+RvrIn-Fincha River,B_Fincha,1.0,True,0.0,0.0,1.0,water,0.0,0,0,0,1,0,1.0,1.0,9.749
+RvrIn-Gibr Shet River,B_Gibgel Gibe I,1.0,True,0.0,0.0,1.0,water,0.0,0,0,0,1,0,1.0,1.0,6.214
+RvrIn-Gibe River,B_Gibgel Gibe III,1.0,True,0.0,0.0,1.0,water,0.0,0,0,0,1,0,1.0,1.0,6.547
+RvrIn-Awasha River,B_Koka,1.0,True,0.0,0.0,1.0,water,0.0,0,0,0,1,0,1.0,1.0,6.984
+RvrIn-Melka Wakena River,B_Melka Wakena,1.0,True,0.0,0.0,1.0,water,0.0,0,0,0,1,0,1.0,1.0,5.668
+RvrOut-Gibe River,B_Gibgel Gibe III Discharge,1.0,True,-1.0,-1.0,0.0,water,0.0,0,0,0,1,0,1.0,1.0,8.574546524064
+RvrOut-Awash River,B_Awash II Discharge,1.0,True,-1.0,-1.0,0.0,water,0.0,0,0,0,1,0,1.0,1.0,6.984
+RvrOut-Melka Wakena River,B_Melka Wakena Discharge,1.0,True,-1.0,-1.0,0.0,water,0.0,0,0,0,1,0,1.0,1.0,5.668
+RvrIn-Genale River,B_Genaledawa III,1.0,True,0.0,0.0,1.0,water,0.0,0,0,0,1,0,1.0,1.0,5.285
+RvrOut-Genale River,B_Genaledawa III Discharge,1.0,True,-1.0,-1.0,0.0,water,0.0,0,0,0,1,0,1.0,1.0,7.908453475936
+RvrIn-Tekeze River,B_Tekeze,1.0,True,0.0,0.0,1.0,water,0.0,0,0,0,1,0,1.0,1.0,5.067
+RvrOut-Tekeze River,B_Tekeze Discharge,1.0,True,-1.0,-1.0,0.0,water,0.0,0,0,0,1,0,1.0,1.0,5.067
+RvrOut-Blue Nile River,B_Grand Renaissance Dam Discharge,1.0,True,-1.0,-1.0,0.0,water,0.0,0,0,0,1,0,1.0,1.0,9.48911627907
+Gen-Export_potential,B_Ethiopia,500.0,False,-1.0,-1.0,0.0,AC,150.0,0,0,0,1,0,1.0,1.0,500.0
