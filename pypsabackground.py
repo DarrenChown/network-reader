@@ -13,12 +13,6 @@ from IPython.display import clear_output
 network = pypsa.Network()
 from pathlib import Path
 
-# Gets File Path for Excel Files
-def get_path(dataDict, parentFolder, childFolder, dataFile):
-    folder = parentFolder / dataDict[childFolder]["Folder"]
-    file_name = f"{dataDict[childFolder][dataFile]}"
-    return folder / file_name
-
 # Convert Excel sheets to CSV files
 def convert_sheet_to_csv(xls, sheet_name, csv_folder_path):
     df = xls.parse(sheet_name)
@@ -72,27 +66,6 @@ def import_from_excel(network, file_name):
                 df = df.loc[:, df.columns.intersection(valid_columns)]
                 for idx, row in df.iterrows():
                     network.add(key, name=idx, **row.dropna().to_dict())
-
-# Function to generate the next file name
-def get_next_filename(folder, base_name, extension):
-    folder = Path(folder)
-    folder.mkdir(parents=True, exist_ok=True)
-    contains = os.listdir(folder)
-
-    existing_numbers = []
-    for filename in contains:
-        # Match filenames that start with the base name and end with the extension
-        if filename.startswith(base_name) and filename.endswith(f'.{extension}'):
-            try:
-                # Extract the number from the filename, assuming the number is between base name and extension
-                number = int(filename[len(base_name):-len(f'.{extension}')])
-                existing_numbers.append(number)
-            except ValueError:
-                pass  # Ignore files that don't match the expected format
-
-    # Determine the next number to use
-    next_number = max(existing_numbers, default=0) + 1
-    return f"{base_name}{next_number}.{extension}"
 
 def solver_selected():
 

@@ -1,0 +1,13 @@
+name,bus,carrier,e_nom,e_cyclic,build_year
+Dam-Awash II,B_Awash II,water,0.0019,True,0
+Dam-Fincha,B_Fincha,water,0.00065,True,0
+Dam-Genaledawa III Dam,B_Genaledawa III,water,0.0023,True,0
+Dam-Gibgel Gibe I,B_Gibgel Gibe I,water,0.000717,True,0
+Dam-Gibgel Gibe II,B_Gibgel Gibe II,water,8.838719999999999e-05,True,0
+Dam-Gibgel Gibe III,B_Gibgel Gibe III,water,0.01175,True,0
+Dam-Grand Renaissance Dam,B_Grand Renaissance Dam,water,0.059199999999999996,True,0
+Dam-Koka,B_Koka,water,0.0019,True,0
+Dam-Melka Wakena,B_Melka Wakena,water,0.00075,True,0
+Dam-Tekeze,B_Tekeze,water,0.005343,True,0
+Dam-Beles,B_Lake Tana,water,0.00912,True,0
+Dam-Lake Tana,B_Lake Tana,water,0.010499999999999999,True,0
